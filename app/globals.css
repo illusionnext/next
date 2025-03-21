@@ -3,13 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-inter-sans: "Inter", sans-serif;
+  --font-geist-sans: "Geist-Sans", sans-serif;
+  --font-geist-mono: "Geist-Mono", monospace;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter-sans);
+  --font-geist: var(--font-geist-sans);
+  --font-geist-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
