@@ -1,7 +1,11 @@
 "use server";
 import "server-only";
 
+// 👇This applies to the entire route. ⚠️ We can't use this in a server component SSR.
+// export const revalidate = 60;
+
 const Home = async () => {
+  // 👇 this revalidate only is applied to the fetch request
   const response = await fetch("https://jsonplaceholder.typicode.com/albums", {
     next: { revalidate: 60 }, // Revalidate every 60 seconds
   });
