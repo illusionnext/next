@@ -31,8 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.className} antialiased`}
+        className={`w-[100%] h-[100%] ${geistSans.variable} ${geistMono.variable} ${inter.className} antialiased`}
       >
+        <h1 className="text-2xl font-bold">Root Layout</h1>
         {children}
       </body>
     </html>
